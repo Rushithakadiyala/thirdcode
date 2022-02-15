@@ -1,0 +1,95 @@
+rushi@DESKTOP-ISPT8ED MINGW64 ~
+$ pwd
+/c/Users/rushi
+
+rushi@DESKTOP-ISPT8ED MINGW64 ~
+$ cd /Z/
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z (master)cd
+$ mkdir firstfile
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z (master)
+$ cd firstfile
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z/firstfile (master)
+$ git init
+Initialized empty Git repository in Z:/firstfile/.git/
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z/firstfile (master)
+$ ls -la
+total 20
+drwxr-xr-x 1 rushi 197609     0 Feb 12 13:54  ./
+drwxr-xr-x 1 rushi 197609     0 Feb 12 13:53  ../
+drwxr-xr-x 1 rushi 197609     0 Feb 12 13:54  .git/
+-rw-r--r-- 1 rushi 197609 11754 Feb  7 18:32 '1st  feb C#.NET.txt'
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z/firstfile (master)
+$ git config --global user.name "Rushithakadiyala"
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z/firstfile (master)
+$ git config --global user.email rushithakadiyala@gmail.com
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z/firstfile (master)
+$ git config --global --list
+user.name=Rushithakadiyala
+user.gmail=rushithakadiyala@gmail.com
+user.email=rushithakadiyala@gmail.com
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z/firstfile (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1st  feb C#.NET.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z/firstfile (master)
+$ git add .
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z/firstfile (master)
+$ git commit -m "this is my first repo"
+[master (root-commit) 23e8407] this is my first repo
+ 1 file changed, 523 insertions(+)
+ create mode 100644 1st  feb C#.NET.txt
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z/firstfile (master)
+$ git commit --amend -m "this file is amend"
+[master 86eccae] this file is amend
+ Date: Sat Feb 12 13:58:25 2022 +0530
+ 1 file changed, 523 insertions(+)
+ create mode 100644 1st  feb C#.NET.txt
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z/firstfile (master)
+$ git remote add pro1 https://github.com/RushithaKadiyala/firstcode.git
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z/firstfile (master)
+$ git push pro1 master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 3.26 KiB | 3.26 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/Rushithakadiyala/firstcode.git
+To https://github.com/RushithaKadiyala/firstcode.git
+ * [new branch]      master -> master
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z/firstfile (master)
+$
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z/firstfile (master)
+$ git clone https://github.com/shiva2668/Project1.git
+Cloning into 'Project1'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), 30.22 KiB | 2.32 MiB/s, done.
+
+rushi@DESKTOP-ISPT8ED MINGW64 /Z/firstfile (master)
+$ cd git remote
